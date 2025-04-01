@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import Button from "../ui/button/Button";
+import { PencilIcon } from "../../icons";
 import Input from "../form/input/InputField";
 import Label from "../form/Label";
 
@@ -28,9 +28,12 @@ export default function EditProfileCard() {
   };
   return (
     <form className="flex flex-col items-center mb-6 lg:flex-row lg:items-start">
-      <div className="w-24 h-24 m-4">
-        <img src="/images/user/owner.png" alt="User" className="w-full h-full rounded-full" />
-      </div>
+      <div className="w-24 h-24 m-4 relative">
+      <img src="/images/user/owner.png" alt="User" className="w-full h-full rounded-full" />
+      <span className="absolute bottom-0 right-0 w-8 h-8 flex items-center justify-center bg-charcoal rounded-full transform translate-x-1/4 translate-y-1/4">
+        <PencilIcon className="text-white size-4 hover:text-gray-700" />
+      </span>
+    </div>
 
       <div className='flex-1 w-full lg:ml-6'>
         <div className="grid grid-cols-1 gap-x-6 gap-y-5 lg:grid-cols-2 w-full">
@@ -57,7 +60,7 @@ export default function EditProfileCard() {
 
           <div className="col-span-2 lg:col-span-1">
             <Label>Password</Label>
-            <Input type="password" placeholder="test" />
+            <Input type="password" placeholder="*******" />
           </div>
 
           <div className="col-span-2 lg:col-span-1">
