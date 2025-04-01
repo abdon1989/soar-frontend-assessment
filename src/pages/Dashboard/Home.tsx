@@ -35,23 +35,29 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-6">
         {/* Top Section: My Cards and Recent Transactions */}        
         <div className="flex flex-col col-span-12 lg:col-span-8 space-y-6">
-          <h2 className="text-lg font-semibold mb-2">My Cards</h2>
-          <div className="flex-grow grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <CreditCard
-              balance={5756}
-              cardHolder="Eddy Cusuma"
-              validThru="12/22"
-              cardNumber="3778 **** **** 1234"
-              mode="dark"
-            />
-            <CreditCard
-              balance={5756}
-              cardHolder="Eddy Cusuma"
-              validThru="12/22"
-              cardNumber="3778 **** **** 1234"
-              mode="light"
-            />
+          <div className="flex justify-between items-center mb-2">
+            <h2 className="text-lg font-semibold mb-2">My Cards</h2>
+            <button className="text-base text-state-blue font-semibold">See All</button>
           </div>
+
+          <div className="flex-grow overflow-hidden">
+            <div className="flex gap-6">
+              <CreditCard
+                balance={5756}
+                cardHolder="Eddy Cusuma"
+                validThru="12/22"
+                cardNumber="3778 **** **** 1234"
+                mode="dark"
+              />
+              <CreditCard
+                balance={5756}
+                cardHolder="Eddy Cusuma"
+                validThru="12/22"
+                cardNumber="3778 **** **** 1234"
+                mode="light"
+              />
+            </div>
+          </div>          
         </div>
 
         <div className="flex flex-col col-span-12 lg:col-span-4">

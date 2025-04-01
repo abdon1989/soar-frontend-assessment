@@ -21,7 +21,7 @@ const CreditCard: React.FC<CreditCardProps> = ({
   return (
     <div
         className={clsx(
-            'rounded-2xl p-5 flex flex-col justify-between border',
+            'min-w-[300px] flex-1 aspect-[16/10] rounded-2xl p-5 flex flex-col justify-between border',
             {
             'bg-white text-gray-800 border-gray-200': !isDark,
             'bg-gradient-to-r from-[#5B5A6F] to-black text-white border-gray-700': isDark,
