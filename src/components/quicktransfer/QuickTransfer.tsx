@@ -50,8 +50,8 @@ const QuickTransfer: React.FC = () => {
 
       {/* Input + Send */}
       <div className="flex items-center justify-between h-1/3 pb-4">
-        <Label className="w-[35%] text-sm font-normal lg:text-base text-steel-blue mr-6 text-center">Write Amount</Label>
-        <div className="w-[65%] flex items-center bg-gray-100 rounded-full">
+        <Label className="text-sm font-normal lg:text-base text-steel-blue mr-6 text-center min-w-[120px]">Write Amount</Label>
+        <div className="flex-1 flex items-center bg-gray-100 rounded-full">
           <input
             type="text"
             value=""
