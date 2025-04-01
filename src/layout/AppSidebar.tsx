@@ -268,7 +268,7 @@ const AppSidebar: React.FC = () => {
           !isExpanded && !isHovered ? "lg:justify-center" : "justify-start"
         }`}
       >
-        <Link className="font-semibold text-xl flex items-center space-x-2" to="/">
+        <Link className="font-semibold text-xl flex items-center space-x-2 mx-2" to="/">
           <span>
             <img
               src="/images/logo/logo-icon.svg"
@@ -277,7 +277,7 @@ const AppSidebar: React.FC = () => {
               height={32}
             />
           </span>
-          <span>
+          <span className="text-theme-xl text-state-blue">
           Soar Task
           </span>          
         </Link>
