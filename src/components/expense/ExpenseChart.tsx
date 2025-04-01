@@ -19,7 +19,7 @@ const ExpenseChart: React.FC<ExpenseChartProps> = ({ labels, data }) => {
         backgroundColor: ['#1E3A8A', '#F97316', '#3B82F6', '#000000'],
         borderColor: '#ffffff',
         borderWidth: 2,
-        offset: [50, 100, 40, 20]
+        offset: [10]
       },
     ],
   };
